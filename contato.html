@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pizza - Contato e pedidos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <p class="marca"><span aria-hidden="true">🍕</span> La Pizza <span>Delivery</span></p>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="contato.html" aria-current="page">Contato e pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contato e pedidos</h1>
+
+    <section>
+      <h2>Atendimento</h2>
+      <dl>
+        <dt>Horário de funcionamento</dt>
+        <dd>Terça a domingo, das 18h às 23h.</dd>
+        <dt>Telefone</dt>
+        <dd>(84) 99999-0000</dd>
+        <dt>E-mail</dt>
+        <dd>contato@lapizza.exemplo</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Faça seu pedido</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}" title="Use apenas letras, com no mínimo 3 caracteres">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone com DDD</label>
+        <input type="tel" id="telefone" name="telefone" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(84) 99999-0000" title="Formato: (84) 99999-0000">
+
+        <label for="sabor">Sabor da pizza</label>
+        <select id="sabor" name="sabor" required>
+          <option value="">Selecione um sabor</option>
+          <option value="calabresa">Calabresa</option>
+          <option value="margherita">Margherita</option>
+          <option value="pepperoni">Pepperoni</option>
+        </select>
+
+        <fieldset>
+          <legend>Tamanho</legend>
+          <input type="radio" id="media" name="tamanho" value="media" required>
+          <label for="media">Média</label>
+          <input type="radio" id="grande" name="tamanho" value="grande">
+          <label for="grande">Grande</label>
+        </fieldset>
+
+        <label for="mensagem">Endereço de entrega e observações</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required minlength="10"></textarea>
+
+        <label class="opcao" for="aceite">
+          <input type="checkbox" id="aceite" name="aceite" required>
+          Concordo em receber contato sobre meu pedido
+        </label>
+
+        <button class="botao" type="submit">Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>La Pizza Delivery - Pau dos Ferros, RN</p>
+    <p>Projeto acadêmico com marca e preços fictícios.</p>
+  </footer>
+</body>
+</html>
