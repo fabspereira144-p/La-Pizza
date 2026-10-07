@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Pizza - Início</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <p class="marca"><span aria-hidden="true">🍕</span> La Pizza <span>Delivery</span></p>
+    <a class="carrinho" href="#"><span aria-hidden="true">🛒</span> Carrinho</a>
     <nav aria-label="Menu principal">
       <ul>
         <li><a href="index.html" aria-current="page">Início</a></li>
@@ -17,37 +21,68 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section>
       <h1>As melhores pizzas da cidade</h1>
       <p>Ingredientes selecionados e muito sabor para você e sua família, com entrega rápida.</p>
-      <a class="botao" href="contato.html">Fazer um pedido de pizza</a>
     </section>
 
     <section>
       <h2>Pizzas em destaque</h2>
-      <article class="cartao">
-        <img src="imagens/pizza-1.png" alt="Pizza de calabresa com fatias de calabresa, azeitonas pretas e cebola roxa sobre tábua de madeira">
-        <h3>Calabresa</h3>
-        <p>Deliciosa pizza de calabresa com cebola e azeitona.</p>
-        <p class="preco">R$ 29,90</p>
-        <a href="contato.html">Pedir pizza de calabresa</a>
-      </article>
-      <article class="cartao">
-        <img src="imagens/pizza-2.png" alt="Pizza Margherita com rodelas de tomate, muçarela e folhas de manjericão fresco">
-        <h3>Margherita</h3>
-        <p>Molho de tomate, muçarela, tomate fresco e manjericão.</p>
-        <p class="preco">R$ 49,90</p>
-        <a href="contato.html">Pedir pizza Margherita</a>
-      </article>
-      <article class="cartao">
-        <img src="imagens/pizza-3.png" alt="Pizza de pepperoni com muçarela derretida sobre tábua de madeira">
-        <h3>Pepperoni</h3>
-        <p>Muçarela e fatias de pepperoni crocantes.</p>
-        <p class="preco">R$ 54,90</p>
-        <a href="contato.html">Pedir pizza de pepperoni</a>
-      </article>
-      <p><a href="cardapio.html">Ver o cardápio completo</a></p>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <img src="./img/pizza-1.jpeg" alt="Pizza de calabresa com fatias de calabresa, azeitonas pretas e cebola roxa sobre tábua de madeira">
+          <h3>Calabresa</h3>
+          <p>Deliciosa pizza de calabresa com cebola e azeitona.</p>
+          <p class="preco">R$ 29,90</p>
+          <a class="botao" href="contato.html">Pedir pizza de calabresa</a>
+        </article>
+
+        <article class="cartao">
+          <img src="img/pizza-2.jpeg" alt="Pizza Margherita com rodelas de tomate, muçarela e folhas de manjericão fresco">
+          <h3>Margherita</h3>
+          <p>Molho de tomate, muçarela, tomate fresco e manjericão.</p>
+          <p class="preco">R$ 49,90</p>
+          <a class="botao" href="contato.html">Pedir pizza Margherita</a>
+        </article>
+
+        <article class="cartao">
+          <img src="img/pizza-3.jpeg" alt="Pizza de pepperoni com muçarela derretida sobre tábua de madeira">
+          <h3>Pepperoni</h3>
+          <p>Muçarela e fatias de pepperoni crocantes.</p>
+          <p class="preco">R$ 54,90</p>
+          <a class="botao" href="contato.html">Pedir pizza de pepperoni</a>
+        </article>
+
+        <article class="cartao">
+          <img src="img/pizza-4.png" alt="Pizza de carne de sol com muçarela derretida sobre tábua de madeira">
+          <h3>Carne de sol</h3>
+          <p>Muçarela e fatias de carne de sol desfiada.</p>
+          <p class="preco">R$ 59,90</p>
+          <a class="botao" href="contato.html">Pedir pizza de carne de sol</a>
+        </article>
+
+        <article class="cartao">
+          <img src="img/pizza-5.png" alt="Pizza de frango com catupiry sobre tábua de madeira">
+          <h3>Frango com catupiry</h3>
+          <p>Muçarela e fatias de frango grelhado com catupiry.</p>
+          <p class="preco">R$ 54,90</p>
+          <a class="botao" href="contato.html">Pedir pizza de frango com catupiry</a>
+        </article>
+
+        <article class="cartao">
+          <img src="img/pizza-6.png" alt="Pizza de chocolate com muçarela derretida sobre tábua de madeira">
+          <h3>Chocolate</h3>
+          <p>Chocolate com pedaços de morango.</p>
+          <p class="preco">R$ 54,90</p>
+          <a class="botao" href="contato.html">Pedir pizza de chocolate</a>
+        </article>
+      </div>
+
+      <p><a class="botao"  href="cardapio.html">Ver o cardápio completo</a></p>
+
     </section>
 
     <section>
@@ -62,33 +97,19 @@
 
     <section>
       <h2>Promoções</h2>
+
       <ul>
         <li>Frete grátis para pedidos acima de R$ 60,00.</li>
         <li>Pizza de calabresa pelo preço especial de R$ 29,90.</li>
       </ul>
-      <p class="promocao">🚚 Frete grátis para pedidos acima de R$ 60,00</p>
-    </section>
 
-    <section class="galeria">
-      <h2>Galeria</h2>
-      <figure>
-        <img src="imagens/pizza-1.png" alt="Pizza de calabresa com azeitonas pretas e cebola roxa">
-        <figcaption>Calabresa com azeitona</figcaption>
-      </figure>
-      <figure>
-        <img src="imagens/pizza-2.png" alt="Pizza Margherita com tomate fresco e manjericão">
-        <figcaption>Margherita com manjericão</figcaption>
-      </figure>
-      <figure>
-        <img src="imagens/pizza-3.png" alt="Pizza de pepperoni com bastante queijo">
-        <figcaption>Pepperoni crocante</figcaption>
-      </figure>
+      <p class="promocao">🚚 Frete grátis para pedidos acima de R$ 60,00</p>
     </section>
   </main>
 
   <footer>
     <p>La Pizza Delivery - Pau dos Ferros, RN</p>
-    <p>Projeto acadêmico com marca e preços fictícios.</p>
+
   </footer>
 </body>
 </html>
