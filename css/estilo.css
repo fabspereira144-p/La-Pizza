@@ -271,6 +271,7 @@ fieldset label, label.opcao {
 
 form .botao {
   margin-top: 24px;
+  display: block;
 }
 
 /* Rodapé */
