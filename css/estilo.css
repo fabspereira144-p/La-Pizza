@@ -24,13 +24,11 @@ body {
   color: var(--cor-texto);
   font-family: var(--fonte-texto);
   font-size: var(--tamanho-texto);
-  line-height: 1.5;
   margin: 0;
 }
 
 h1, h2, h3 {
   font-family: var(--fonte-titulo);
-  line-height: 1.2;
 }
 
 h1 {
