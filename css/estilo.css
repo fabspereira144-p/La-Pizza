@@ -1,5 +1,4 @@
 :root {
-  /* Cores */
   --cor-fundo: #000000;
   --cor-superficie: #212529;
   --cor-texto: #ffffff;
@@ -11,7 +10,6 @@
   --cor-campo-fundo: #ffffff;
   --cor-campo-texto: #000000;
 
-  /* Tipografia */
   --fonte-titulo: "Roboto Slab", sans-serif;
   --fonte-texto: "Open Sans", sans-serif;
   --tamanho-texto: 16px;
@@ -20,7 +18,7 @@
   --tamanho-h3: 20px;
 }
 
-/* Base */
+/* BASE */
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
@@ -55,8 +53,7 @@ a:hover {
   color: var(--cor-destaque);
 }
 
-
-/* Cabeçalho e menu */
+/* HEADER */
 header {
   background-color: var(--cor-superficie);
   padding: 16px 24px;
@@ -69,20 +66,6 @@ header {
 
 header nav {
   flex-basis: 100%;
-}
-
-.carrinho {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
-  color: var(--cor-texto);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.carrinho:hover {
-  color: var(--cor-destaque);
 }
 
 .marca {
@@ -125,7 +108,7 @@ nav a[aria-current="page"] {
   font-weight: bold;
 }
 
-/* Conteúdo  */
+/* MAIN */
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -169,7 +152,7 @@ section {
   margin: 0;
 }
 
-/* Cartões de pizza  */
+/* CARTÕES */
 .cartoes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -225,23 +208,6 @@ section {
   background-color: var(--cor-promocao);
 }
 
-/* Galeria  */
-.galeria figure {
-  display: inline-block;
-  width: 280px;
-  margin: 0 16px 16px 0;
-  vertical-align: top;
-}
-.galeria img {
-  width: 100%;
-  border-radius: 6px;
-
-}
-.galeria figcaption {
-  padding-top: 8px;
-}
-
-/* Listas */
 ol, ul {
   padding-left: 24px;
 }
@@ -256,12 +222,13 @@ dd {
   margin-left: 24px;
 }
 
-/* Tabela */
+/* TABELA */
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--cor-superficie);
 }
+
 caption {
   text-align: left;
   padding: 8px 0;
