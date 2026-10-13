@@ -174,12 +174,8 @@ section {
   border-radius: 6px;
 }
 
-.cartao-destaque {
-  position: relative;
-  overflow: hidden;
-}
 
-
+/* LISTAS */
 ol, ul {
   padding-left: 24px;
 }
